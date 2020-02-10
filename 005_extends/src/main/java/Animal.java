@@ -1,36 +1,50 @@
 public class Animal {
+    String name;
     int age;
-    double weight;
+    int weight;
 
     public Animal() {
     }
 
-    public Animal(int age, double weight) {
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    public Animal(String name, int age, int weight) {
+        this.name = name;
         this.age = age;
         this.weight = weight;
     }
 
-    public int getAge() {
-        return age;
+    public String getAge() {
+        return age + "岁";
     }
 
     public void setAge(int age) {
         this.age = age;
     }
 
-    public double getWeight() {
-        return weight;
+    public String getWeight() {
+        return weight + "Kg";
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void eat() {
-        System.out.println("我去吃东西了...");
+        System.out.print("饱餐一顿");
     }
 
     public void sleep() {
-        System.out.println("我去睡觉了...");
+        System.out.print("睡觉了");
     }
 }

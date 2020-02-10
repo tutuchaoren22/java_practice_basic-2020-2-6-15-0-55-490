@@ -1,12 +1,16 @@
-public class Birds extends Animal{
-    double flySpeed ;
+public class Birds extends Animal {
+    double flySpeed;
 
     public Birds() {
     }
 
-    public Birds(int age, double weight, double flySpeed) {
-        super(age, weight);
+    public Birds(String name, int age, int weight, double flySpeed) {
+        super(name, age, weight);
         this.flySpeed = flySpeed;
+    }
+
+    public Birds(String name, int age, int weight) {
+        super(name, age, weight);
     }
 
     public double getFlySpeed() {
@@ -17,7 +21,7 @@ public class Birds extends Animal{
         this.flySpeed = flySpeed;
     }
 
-    public void fly(){
-        System.out.println("我去飞了...");
+    public void fly() {
+        System.out.print("翱翔天空");
     }
 }

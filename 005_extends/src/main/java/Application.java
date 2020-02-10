@@ -7,16 +7,18 @@ public class Application {
      * 心满意足之后就睡觉了。
      */
     public static void main(String[] args) {
-        Eagle eagle = new Eagle();
-        eagle.age = 4;
-        eagle.weight = 5;
+        Animal rabbit = new Animal("兔子");
+        Eagle eagle = new Eagle("老鹰", 4, 5, rabbit);
 
-        Animal rabbit = new Animal();
-
-        eagle.predator = rabbit;
+        System.out.print("一只" + eagle.getAge() + "的" + eagle.getName() + "，体重" + eagle.getWeight() + "，");
+        System.out.println("这只" + eagle.getName() + "生活在" + rabbit.getName() + "窝所以它只捕食" + rabbit.getName() + "。");
+        System.out.print("某天它先");
         eagle.fly();
-        eagle.setPredator(rabbit);
+        System.out.print("，在饥肠辘辘之际捕食了一只" + rabbit.getName() + "，然后");
         eagle.eat();
+        System.out.println("，");
+        System.out.print("心满意足之后就");
         eagle.sleep();
+        System.out.print("。");
     }
 }
