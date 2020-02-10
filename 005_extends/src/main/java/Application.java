@@ -7,6 +7,16 @@ public class Application {
      * 心满意足之后就睡觉了。
      */
     public static void main(String[] args) {
+        Eagle eagle = new Eagle();
+        eagle.age = 4;
+        eagle.weight = 5;
 
+        Animal rabbit = new Animal();
+
+        eagle.predator = rabbit;
+        eagle.fly();
+        eagle.setPredator(rabbit);
+        eagle.eat();
+        eagle.sleep();
     }
 }

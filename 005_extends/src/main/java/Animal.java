@@ -27,10 +27,10 @@ public class Animal {
     }
 
     public void eat() {
-
+        System.out.println("我去吃东西了...");
     }
 
     public void sleep() {
-
+        System.out.println("我去睡觉了...");
     }
 }

@@ -18,6 +18,6 @@ public class Birds extends Animal{
     }
 
     public void fly(){
-
+        System.out.println("我去飞了...");
     }
 }
